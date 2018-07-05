@@ -15,56 +15,8 @@
 </head>
 <body class="bg-whitelightest font-sans font-normal">
     <div class="flex flex-col md:flex-row" id="app">
-        <div class="w-auto md:w-96 bg-brand p-8 h-auto md:h-screen relative md:fixed flex flex-col">
-            <h4 class="font-normal tracking-wide text-4xl text-brand-lightest mb-4">
-                Rob <span class="text-brand-darker">Burley</span>
-            </h4>
 
-            <span class="absolute md:hidden pin-r pin-t mr-8 mt-8">
-                <font-awesome-icon icon="bars" class="text-brand-lightest text-4xl cursor-pointer"></font-awesome-icon>
-            </span>
-
-            <ul class="list-reset hidden md:flex  md:flex-col">
-                <li class="my-8">
-                    <a href="#"
-                       class="py-8 font-thin tracking-wide text-2xl text-brand-lightest no-underline hover:text-brand-darker">
-                        About
-                    </a>
-                </li>
-
-                <li class="my-8">
-                    <a href="#"
-                       class="py-8 font-thin tracking-wide text-2xl text-brand-lightest no-underline hover:text-brand-darker">
-                        Work
-                    </a>
-                </li>
-
-                <li class="my-8">
-                    <a href="#"
-                       class="py-8 font-thin tracking-wide text-2xl text-brand-lightest no-underline hover:text-brand-darker">
-                        Contact
-                    </a>
-                </li>
-            </ul>
-
-            <div class="flex flex-1 items-end mt-2">
-                <div class="flex flex-col">
-                    <a href="https://twitter.com/BurleyDev"
-                       class="flex text-brand-darker items-center mt-2 no-underline hover:text-brand-lightest"
-                    >
-                        <font-awesome-icon :icon="['fab', 'twitter-square']" class="mr-4 text-2xl"></font-awesome-icon>
-                        @BurleyDev
-                    </a>
-
-                    <a href="https://github.com/robburley"
-                       class="flex text-brand-darker items-center mt-2 no-underline hover:text-brand-lightest"
-                    >
-                        <font-awesome-icon :icon="['fab', 'github-square']" class="mr-4 text-2xl"></font-awesome-icon>
-                        /robburley
-                    </a>
-                </div>
-            </div>
-        </div>
+        <nav-bar></nav-bar>
 
         <div class="min-h-screen flex flex-col flex-1 ml-0 md:ml-96">
             <div class="flex flex-col justify-center items-center h-128 bg-fixed bg-no-repeat bg-cover p-8"
@@ -79,8 +31,8 @@
                 </p>
             </div>
 
-            <div class="container mx-auto p-8 text-grey-darker mb-96">
-                <h4 class="tracking-wide font-normal text-2xl text-brand-darker mb-2">
+            <div class="container mx-auto p-8 text-grey-darker">
+                <h4 class="tracking-wide font-normal text-2xl text-brand-darker mb-2" id="about">
                     About Me
                 </h4>
 
@@ -122,7 +74,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col lg:flex-row items-center text-xl font-thin leading-loose mb-8">
+                <div class="flex flex-col lg:flex-row items-center text-xl font-thin leading-loose mb-32">
                     <div class="w-full lg:w-1/3 mr-2">
                         <img src="/img/other.png" class="w-full">
                     </div>
@@ -134,6 +86,15 @@
                         the rise of CSS preprocessors have been a gamer changer.
                     </div>
                 </div>
+
+
+                <h4 class="tracking-wide font-normal text-2xl text-brand-darker mb-96" id="work">
+                    Work
+                </h4>
+
+                <h4 class="tracking-wide font-normal text-2xl text-brand-darker mb-96" id="contact">
+                    Contact
+                </h4>
             </div>
         </div>
     </div>
